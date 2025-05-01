@@ -22,8 +22,9 @@ begin
     process(clock)
     begin
         if rising_edge(clock) then
+
             if reset = '1' then
-            count <= (others => '0'); -- Reset assíncrono
+                count <= (others => '0'); -- Reset síncrono
 
             elsif enable = '1' then
                 if load = '1' then
