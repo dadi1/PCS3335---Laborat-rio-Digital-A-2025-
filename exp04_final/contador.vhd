@@ -9,7 +9,7 @@ entity counter is
 	port (
 	clock, reset: in std_logic; --Clock e reset assincrono ativo alto
 	enable: in std_logic; --Habilita a contagem
-    divisor : in std_logic_vector (DIV-1 downto 0);
+   divisor : in std_logic_vector (DIV-1 downto 0);
 	data_o: out std_logic --Saida 
 	);
 end counter;
@@ -38,4 +38,4 @@ architecture comportamental of counter is
 	end process;
 
 	
-end comportamental;	
+end comportamental;
